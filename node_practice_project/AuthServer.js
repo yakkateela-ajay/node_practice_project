@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 //defining routes for authentication & autherization
-const authRouter=require("./Fligital-Lite/auth/AuthRouter")
+const authRouter=require("./sampleProject/auth/AuthRouter")
 app.use("/auth",authRouter)
 
 //////////////////////////////////////////////////

@@ -35,7 +35,7 @@ app.use(bodyParser.json())
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Fligital App - Backend!!!" });
+  res.json({ message: "Welcome to Sample project - Backend!!!" });
 });
 
 //Core App Routers Definitions
@@ -44,11 +44,11 @@ app.get("/", (req, res) => {
 ///////////////////////////////////////
 
 //define routes for user module
-const userRouter=require("./Fligital-Lite/users/UserRouter");
+const userRouter=require("./sampleProject/users/UserRouter");
 app.use("/users",userRouter)
 
 //define router for agent load module
-const agentRouter= require("./Fligital-Lite/loads/AgentLoads/AgentRouter")
+const agentRouter= require("./sampleProject/loads/AgentLoads/AgentRouter")
 app.use("/load",agentRouter)
 
 //define router for fo load module
