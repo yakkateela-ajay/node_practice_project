@@ -1,0 +1,42 @@
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "id":672
+}
+
+###
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "firstName":"ABCDE",
+    "lastName":"Test",
+    "password":"password123",
+    "email":"test@test.com",
+    "role":"AGENT",
+    "language":"en",
+    "phoneNumber":"21231231231",
+    "organizationName":"Fligital",
+    "panNumber":"PAN123123",
+    "gstNumber":"GST123123",
+    "city":"HYD",
+    "state":"TS",
+    "pincode":"500032",
+    "address":"HYD"
+}
+
+###
+
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjcyLCJpYXQiOjE2NTU5NTgzMjYsImV4cCI6MTY1NjA0NDcyNn0.VMS_zzWcxaUeUndqbbYMQo4hfz7gsvmMplbWs5NasEY
+
+###
+
+GET http://localhost:4000/users/672
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjcyLCJpYXQiOjE2NTU5NTgzMjYsImV4cCI6MTY1NjA0NDcyNn0.VMS_zzWcxaUeUndqbbYMQo4hfz7gsvmMplbWs5NasEY
+###
+
+GET http://localhost:4000/load
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjcyLCJpYXQiOjE2NTU5NTgzMjYsImV4cCI6MTY1NjA0NDcyNn0.VMS_zzWcxaUeUndqbbYMQo4hfz7gsvmMplbWs5NasEY
